@@ -12,7 +12,9 @@ class CounterProvider with ChangeNotifier {
   }
 
   void decreament() {
-    _counter--;
+    if (_counter > 0) {
+      _counter--;
+    }
     notifyListeners();
   }
 }
