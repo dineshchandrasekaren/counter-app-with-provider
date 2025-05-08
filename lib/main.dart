@@ -13,7 +13,7 @@ class App extends StatelessWidget {
     final counter = Provider.of<CounterProvider>(context);
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: Text("data")),
+        appBar: AppBar(title: Text("counter")),
         body: Column(
           children: [
             Text("${counter.count}"),
